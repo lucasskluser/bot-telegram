@@ -5,8 +5,9 @@
   "main": "main.js",
   "scripts": {
     "build": "rimraf ./build && tsc",
-    "start": "node -r ts-node/register src/main.ts",
-    "start:dev": "nodemon"
+    "start:dev": "node -r ts-node/register src/main.ts",
+    "start:watch": "nodemon",
+    "start": "node build/main.js"
   },
   "keywords": [
     "bot",
