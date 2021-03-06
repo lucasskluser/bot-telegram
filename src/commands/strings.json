@@ -1,0 +1,11 @@
+{
+  "greeting": {
+    "greeting": [
+      "Olá, ${message.from.first_name}!",
+      "E aí, ${message.from.first_name}",
+      "Oi, ${message.from.first_name}",
+      "Fala tu",
+      "E aí, meu chapa"
+    ]
+  }
+}

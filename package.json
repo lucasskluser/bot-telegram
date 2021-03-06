@@ -1,0 +1,49 @@
+{
+  "name": "jarvis-telegram",
+  "version": "1.0.0",
+  "description": "Bot para o grupo de amigos no Telegram",
+  "main": "main.js",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start": "node -r ts-node/register src/main.ts",
+    "start:dev": "nodemon"
+  },
+  "keywords": [
+    "bot",
+    "jarvis",
+    "telegram"
+  ],
+  "author": {
+    "name": "Lucas Samuel Kluser",
+    "email": "lucasskluser@outlook.com"
+  },
+  "license": "UNLICENSED",
+  "nodemonConfig": {
+    "ignore": [
+      "test/*",
+      "docs/*",
+      "scripts/*",
+      "Dockerfile",
+      ".dockerignore",
+      ".gitignore"
+    ],
+    "ext": "ts",
+    "exec": "npm start"
+  },
+  "dependencies": {
+    "inversify": "^5.0.5",
+    "node-wit": "^6.0.1",
+    "telegraf": "^4.1.1",
+    "telegraf-command-parts": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "@types/node-wit": "^6.0.0",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^8.0.17",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.2"
+  }
+}
