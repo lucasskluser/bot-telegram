@@ -1,7 +1,6 @@
-import { config as loadEnv } from "dotenv";
 import { GreetingCommand } from "./commands/greeting.command";
 import { App } from "./core/app";
-
+import { config as loadEnv } from "dotenv";
 loadEnv();
 
 const app: App = new App({
