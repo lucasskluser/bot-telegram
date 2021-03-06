@@ -4,10 +4,10 @@
   "description": "Bot para o grupo de amigos no Telegram",
   "main": "main.js",
   "scripts": {
-    "build": "rimraf ./build && tsc",
+    "build": "rimraf ./dist && tsc -p tsconfig.build.json",
+    "start": "node dist/src/main.js",
     "start:dev": "node -r ts-node/register src/main.ts",
-    "start:watch": "nodemon",
-    "start": "node build/main.js"
+    "start:watch": "nodemon"
   },
   "keywords": [
     "bot",
